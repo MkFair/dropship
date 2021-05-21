@@ -2,11 +2,11 @@
 
 use CodeIgniter\Database\Migration;
 
-class User extends Migration
+class UserAddBalance extends Migration
 {
 	public function up()
 	{
-        $column =[
+		$column =[
             "balance" =>[
                 "type"=>"decimal",
                 "constraint"=>"10,2",
