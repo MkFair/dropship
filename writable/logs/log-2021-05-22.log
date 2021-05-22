@@ -1,0 +1,22 @@
+CRITICAL - 2021-05-22 07:02:39 --> Unable to connect to the database.
+#0 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/mkalister/Документы/php/dropship/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#2 /home/mkalister/Документы/php/dropship/system/Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/mkalister/Документы/php/dropship/app/Controllers/Admin/Users.php(10): CodeIgniter\Model->findAll()
+#4 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(918): App\Controllers\Admin\Users->index()
+#5 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/mkalister/Документы/php/dropship/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /home/mkalister/Документы/php/dropship/system/Commands/Server/rewrite.php(34): require_once('/home/mkalister...')
+#9 {main}
+CRITICAL - 2021-05-22 07:02:51 --> Unable to connect to the database.
+#0 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/mkalister/Документы/php/dropship/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#2 /home/mkalister/Документы/php/dropship/system/Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/mkalister/Документы/php/dropship/app/Controllers/Admin/Users.php(10): CodeIgniter\Model->findAll()
+#4 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(918): App\Controllers\Admin\Users->index()
+#5 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/mkalister/Документы/php/dropship/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /home/mkalister/Документы/php/dropship/system/Commands/Server/rewrite.php(34): require_once('/home/mkalister...')
+#9 {main}

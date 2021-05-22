@@ -43,6 +43,7 @@ class BaseController extends Controller
 		// $this->session = \Config\Services::session();
 	}
     public function display($page){
-        return view($page,$this->data);
+        $this->data["content"] = view($page,$this->data);
+        echo view("template.php",$this->data);
     }
 }
