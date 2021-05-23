@@ -36,6 +36,8 @@ class BaseController extends Controller
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
         $this->data = [];
+        $this->data["user"] = new \StdClass();
+        $this->data["user"]->balance = 0;
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
