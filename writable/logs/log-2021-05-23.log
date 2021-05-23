@@ -1,0 +1,10 @@
+CRITICAL - 2021-05-23 05:56:18 --> syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) or '{' or '$'
+#0 C:\Users\11\Documents\GitHub\dropship\system\Common.php(1119): CodeIgniter\View\View->render('admin/users.php', Array, true)
+#1 C:\Users\11\Documents\GitHub\dropship\app\Controllers\BaseController.php(48): view('admin/users.php', Array)
+#2 C:\Users\11\Documents\GitHub\dropship\app\Controllers\Admin\Users.php(11): App\Controllers\BaseController->display('admin/users.php')
+#3 C:\Users\11\Documents\GitHub\dropship\system\CodeIgniter.php(918): App\Controllers\Admin\Users->index()
+#4 C:\Users\11\Documents\GitHub\dropship\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#5 C:\Users\11\Documents\GitHub\dropship\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\11\Documents\GitHub\dropship\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\11\Documents\GitHub\dropship\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\11\\Doc...')
+#8 {main}
