@@ -52,8 +52,8 @@
         <form id="stat_default_time_form">
          <div class="form-group">
               <label class="form-label" >Период</label>
-               <div class="form-control-wrap">
-               <select name="period" class="form-control ">
+               <div class="form-control-select">
+               <select name="period" class="form-control">
             <option value=1>7 дней</option>
             <option value=2>14 дней</option>
             <option value=3>1 месяц</option>
