@@ -38,6 +38,7 @@ class BaseController extends Controller
         $this->data = [];
         $this->data["user"] = new \StdClass();
         $this->data["user"]->balance = 0;
+        $this->data["user"]->id = 1;
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------

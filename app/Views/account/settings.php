@@ -85,7 +85,7 @@
          <div class="form-group">
               <label class="form-label" >API Токен</label>
                <div class="form-control-wrap">
-              <input type="text" class="form-control" name="api_key" readonly>
+              <input type="text" class="form-control" name="api_key" value="<?=$api_key?>" readonly>
               </div>
         </div>
          <button type="submit" class="btn btn-lg btn-danger mt-1 btn_text_center form-control">Создать новый</button>
