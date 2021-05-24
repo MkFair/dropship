@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx" class="js">
 
@@ -7,15 +8,89 @@
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="/static/images/favicon.png">
     <!-- Page Title  -->
     <title></title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="/static/assets/css/dashlite.css?ver=2.4.0">
     <link id="skin-default" rel="stylesheet" href="/static/assets/css/theme.css?ver=2.4.0">
+     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/png">
+    <style type="text/css">
+      @font-face{
+        src: url("/static/assets/fonts/TwentytwelveSansG.otf");
+        font-family: TwentytwelveSansG;
+        }
+
+        body{
+            font-family: TwentytwelveSansG!important;
+        }
+
+        .title{
+        font-weight: lighter;
+         }
+
+
+    </style>
+
+
 </head>
 
 <body class="nk-body bg-lighter npc-default has-sidebar ">
+
+ <div class="modal fade" tabindex="-1" id="modalTop">
+        <div class="modal-dialog modal-dialog-top modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Контакты</h5>
+                    <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                        <em class="icon ni ni-cross"></em>
+                    </a>
+                </div>
+                <div class="modal-body">
+<div class="row mb-3">
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4 statistics_block" >
+    <div class="card h-100">
+        <div class="card-inner">
+          <div class="card-title-group  g-2">
+             <div class="card-title ">
+              <h5 class="title"> Менеджер</h5> 
+Грынив Ирина <br>
++380 67 507 37 25 <br>
+(Viber/Telegram)<br>
+            <button class="btn btn-success mt-2" style="font-size:16px; font-weight: 200;">Позвонить</button>
+
+            </div>
+
+            </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4 statistics_block">
+    <div class="card  h-100">
+        <div class="card-inner">
+          <div class="card-title-group  g-2">
+             <div class="card-title ">
+              <h5 class="title">CEO </h5>
+
+              Кравец Андрей  <br>
+           +380 95 43 095 23 <br>
+            (Viber/Telegram)<br>
+
+             <button class="btn btn-success mt-2" style="font-size:16px; font-weight: 200;"> Позвонить  </button>
+                    </div>
+            </div>
+    </div>
+    </div>
+    </div>
+</div>
+                </div>
+              <!--  <div class="modal-footer bg-light">
+                    <span class="sub-text"> <a href="#" data-dismiss="modal" aria-label="Close"> <button class="btn btn-primary">Закрыть</button></a></span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
     <div class="nk-app-root">
         <!-- main @s -->
         <div class="nk-main ">
@@ -25,8 +100,8 @@
                     <div class="nk-sidebar-brand">
                         <a href="html/index.html" class="logo-link nk-sidebar-logo">
                             <img class="logo-light logo-img" src="/static/images/logo.png" srcset="/static/images/logo2x.png 2x" alt="logo">
-                            <img class="logo-dark logo-img" src="/static/images/logo-dark.png" srcset="/static/images/logo-dark2x.png 2x" alt="logo-dark">
-                            <img class="logo-small logo-img logo-img-small" src="/static/images/logo-small.png" srcset="/static/images/logo-small2x.png 2x" alt="logo-small">
+                            <img class="logo-dark logo-img" src="/static/images/logo.png" srcset="/static/images/logo2x.png 2x" alt="logo-dark">
+                            <img class="logo-small logo-img logo-img-small" src="/static/images/logo_small.png" srcset="/static/images/logo_small.png 2x" alt="logo-small">
                         </a>
                     </div>
                     <div class="nk-menu-trigger mr-n2">
@@ -65,7 +140,7 @@
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
                                     <a href="/orders" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-growth-fill"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-cc-alt2-fill"></em></span>
                                         <span class="nk-menu-text">Заказы</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
@@ -74,7 +149,17 @@
                                         <span class="nk-menu-icon"><em class="icon ni ni-growth-fill"></em></span>
                                         <span class="nk-menu-text">Пополнение счета</span>
                                     </a>
+                                </li>
+                             <li class="nk-menu-item">
+                                    <a href="/contact" class="nk-menu-link" data-toggle="modal" data-target="#modalTop">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Контакты</span>
+                                    </a>
                                 </li><!-- .nk-menu-item -->
+
+
+                               
+                                <!-- .nk-menu-item -->
                                 <li class="nk-menu-heading">
                                     <h6 class="overline-title text-primary-alt">Applications</h6>
                                 </li><!-- .nk-menu-heading -->
@@ -554,6 +639,9 @@
     <script src="/static/assets/js/bundle.js?ver=2.4.0"></script>
     <script src="/static/assets/js/scripts.js?ver=2.4.0"></script>
     <script src="/static/assets/js/charts/chart-ecommerce.js?ver=2.4.0"></script>
+    <script type="text/javascript">
+
+    </script>
 </body>
 
 </html>

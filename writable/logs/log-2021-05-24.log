@@ -1,0 +1,11 @@
+CRITICAL - 2021-05-24 05:26:24 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+#0 C:\Users\11\Documents\GitHub\dropship\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\Users\\11\\Doc...')
+#1 C:\Users\11\Documents\GitHub\dropship\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User')
+#3 C:\Users\11\Documents\GitHub\dropship\app\Controllers\Admin\Users.php(9): spl_autoload_call('App\\Models\\User')
+#4 C:\Users\11\Documents\GitHub\dropship\system\CodeIgniter.php(918): App\Controllers\Admin\Users->index()
+#5 C:\Users\11\Documents\GitHub\dropship\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#6 C:\Users\11\Documents\GitHub\dropship\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\11\Documents\GitHub\dropship\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\11\Documents\GitHub\dropship\system\Commands\Server\rewrite.php(34): require_once('C:\\Users\\11\\Doc...')
+#9 {main}
