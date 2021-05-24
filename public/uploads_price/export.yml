@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<yml_catalog date="2021-05-24 19:17">
+  <shop>
+    <name>База заявок 1</name>
+    <company>База заявок 1</company>
+    <currencies>
+      <currency id="UAH" rate="1"/>
+      <currency id="USD" rate="1.000000"/>
+      <currency id="EUR" rate="1.000000"/>
+      <currency id="RUB" rate="1.000000"/>
+    </currencies>
+    <categories>
+      <category id="1">Продукты</category>
+    </categories>
+    <offers>
+      <offer id="id_2" available="true">
+        <price>1000</price>
+        <currencyId>UAH</currencyId>
+        <name>Пшеница</name>
+        <description><![CDATA[<div>Обычная Пшеница</div>]]></description>
+      </offer>
+      <offer id="id_1" available="true">
+        <price>10</price>
+        <currencyId>UAH</currencyId>
+        <name>Овес</name>
+        <categoryId>1</categoryId>
+        <description><![CDATA[<div>Обычный Овес</div>]]></description>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
