@@ -13,9 +13,20 @@ class Settings extends BaseController{
         $ap = $ak->get_by_user($this->data["user"]->id);
         echo $ap->key;
     }
+    function change_stat_period(){
+        $request = \Config\Services::request();
+        if( $request->getPost("period")>=1 and  $request->getPost("period")<=5 ){
+            $um= new \App\Models\User();
+            $um->update_user($this->data["user"]->id,["stat_time"=>$request->getPost("period")]);
+            echo "200";
+        }
+    }
     function change_password(){
         $request = \Config\Services::request();
-        $um= new \App\Models\User();
-        $um->change_password($this->data["user"]->id, $request->getPost("password"));
+        if($request->getPost("password") == $request->getPost("confirm_password")){
+            $um= new \App\Models\User();
+            $um->change_password($this->data["user"]->id, $request->getPost("password"));
+            echo "200";
+        }
     }
 } 

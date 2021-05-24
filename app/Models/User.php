@@ -18,7 +18,7 @@ class User extends Model{
         return $this->insert(['phone'=>$phone, 'password'=>$password]);
         
     }
-    public change_password( int $user_id, string $password){
-        $this->where(["user_id"=>$user_id])->update(["password"=>$password])
+    public function change_password( int $user_id, string $password){
+        $this->where(["user_id"=>$user_id])->update(["password"=>$password]);
     }
 }

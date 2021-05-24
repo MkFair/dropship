@@ -16,7 +16,7 @@
               <p>Смена пароля</p>
                 </div>
         </div>
-         <form id="password_change_form">
+         <form id="password_change_form" action="/settings/change_password">
          <div class="form-group">
               <label class="form-label" >Новый пароль</label>
                <div class="form-control-wrap">
@@ -49,17 +49,17 @@
               <p>Выберите период по умолчанию для отображения статистики </p>
                 </div>
         </div>
-        <form id="stat_default_time_form">
+        <form id="stat_default_time_form" action="/settings/change_stat_period">
          <div class="form-group">
               <label class="form-label" >Период</label>
                <div class="form-control-select">
                <select name="period" class="form-control">
-            <option value=1>7 дней</option>
-            <option value=2>14 дней</option>
-            <option value=3>1 месяц</option>
-            <option value=4>3 месяца</option>
-            <option value=5>За все время</option>
-        </select>
+                    <option <?=($user->stat_time==1?"selected":"")?> value=1>7 дней</option>
+                    <option <?=($user->stat_time==2?"selected":"")?> value=2>14 дней</option>
+                    <option <?=($user->stat_time==3?"selected":"")?> value=3>1 месяц</option>
+                    <option <?=($user->stat_time==4?"selected":"")?> value=4>3 месяца</option>
+                    <option <?=($user->stat_time==5?"selected":"")?> value=5>За все время</option>
+                </select>
               </div>
         </div>
 
@@ -81,7 +81,7 @@
               <p>Используется для авторизации запросов для автоматизации выгрузки остатков</p>
                 </div>
         </div>
-    <form id="api_key_form">
+    <form id="api_key_form" action="/settings/create_key">
          <div class="form-group">
               <label class="form-label" >API Токен</label>
                <div class="form-control-wrap">
