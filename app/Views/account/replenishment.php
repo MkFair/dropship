@@ -1,3 +1,12 @@
+<style type="text/css">
+  @media(max-width: 900px){
+    td{
+      padding-left: 0rem!important;
+      padding-right: 1rem!important;
+    }
+  }
+</style>
+
 <div class="">
 	<div class="nk-block-head-content mb-3">
        <h4 class="nk-block-title page-title" style="font-weight: normal;">ПОПОЛНЕНИЕ СЧЕТА </h4>
@@ -5,10 +14,50 @@
 
   <div class="nk-block">
         <div class="row g-gs">
-            <div class="col-lg-6 ">
-                
+            <div class="col-lg-6 col-xs-12">
+                <div class="card h-100">
+              <div class="card-inner">
+                 <div class="card-title-group pb-3 g-2">
+                   <div class="card-title ">
+                    <h5 class="title">Пополнение по реквизитам</h5>
+                      <p>
+                    Такой перевод будет зачислен в течении 3-х рабочих дней  </p>
+
+                   </div>
+            
+                </div>
+                <table class="table" style="overflow-wrap:anywhere;">
+  <tbody>
+    <tr>
+      <td>Наименование</td>
+      <td>ФОП Петрончак Дмитро Ігорович UAH</td>
+    </tr>
+    <tr>
+      <td>Код ЄДРПОУ(ОКПО)</td>
+      <td>3245307259</td>
+    </tr>
+    <tr>
+      <td>Счет</td>
+      <td>26008052522960</td>
+    </tr>
+     <tr>
+      <td>Счет(IBAN)</td>
+      <td>UA663366770000026008052522960</td>
+    </tr>
+     <tr>
+      <td>Код банка(МФО)</td>
+      <td>336677</td>
+    </tr>
+     <tr>
+      <td>Наименование банка</td>
+      <td>ІВАНО-ФРАНКIВ.ФIЛIЯАТ КБ «ПРИВАТБАНК»</td>
+    </tr>
+  </tbody>
+</table>
             </div>
-          <div class="col-lg-6 ">
+          </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
             <div class="card h-100">
               <div class="card-inner">
                  <div class="card-title-group pb-3 g-2">

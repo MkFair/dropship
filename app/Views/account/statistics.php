@@ -3,11 +3,20 @@
    		font-weight: lighter;
    	}
    	.statistics_block{
-   		height: 270px;
+   		min-height: 270px;
    	}
    	.statistics_block_three{
 
    	}
+   	@media(max-width: 900px){
+    .statistics_block{
+   		min-height: 180px;
+   	}
+   	.card-body{
+   		padding-left: 0px;
+   		padding-right: 0px;
+   	}
+    }
    </style>
 
     <div class="nk-block-head-content mb-3">

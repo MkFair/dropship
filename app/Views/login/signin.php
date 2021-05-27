@@ -66,7 +66,7 @@
                             
                             </div>
                         </div>
-                    </div>
+                    </div> <!--
                     <div class="nk-footer nk-auth-footer-full">
                         <div class="container wide-lg">
                             <div class="row g-3">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- wrap @e -->
             </div>
             <!-- content @e -->
