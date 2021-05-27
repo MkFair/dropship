@@ -10,7 +10,7 @@ class Products extends Migration
             "id" => [
                 "type" => "int",
                 "constraint" => 8,
-                "auto_inrement" => true,
+                "auto_increment" => true,
                 "unsigned" => true
             ],
             "name" => [
@@ -19,15 +19,15 @@ class Products extends Migration
             ],
             "description" => [
                 "type" => "text",
-            ]
+            ],
             "price" => [
                 "type" => "decimal",
                 "constraint" => "10,2",
-            ]
+            ],
             "currencyId" => [
                 "type" => "varchar",
                 "constraint" => 6,
-            ]
+            ],
             "categoryId" => [
                 "type" => "int",
                 "constraint" => 6,

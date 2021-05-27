@@ -10,7 +10,7 @@ class Admhistorybalance extends Migration
             "id"=>[
                 "type"=>"int",
                 "unsigned" => true,
-                "auto_inrements" => true
+                "auto_increment" => true
             ],
             "user_id" => [
                 "type"=>"int",

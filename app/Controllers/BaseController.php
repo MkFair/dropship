@@ -36,10 +36,12 @@ class BaseController extends Controller
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
         $this->data = [];
-        $this->data["user"] = new \StdClass();
-        $this->data["user"]->balance = 0;
-        $this->data["user"]->id = 1;
-        $this->data["user"]->stat_time = 2;
+        $session = session();
+        if( $session->has("user_id") ){
+            $model = new \App\Models\User();
+            $this->data["user"] = $model->find( $session->get("user_id") );
+            
+        }
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------

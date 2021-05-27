@@ -16,46 +16,58 @@
 
 <div class="row mb-3">
 	<div class="col-lg-6 col-md-6 col-sm-12 mb-4 statistics_block">
-	<div class="card h-100">
+        <div class="card h-100">
+            <div class="card-inner">
+                <div class="card-title-group  g-2">
+                    <div class="card-title ">
+                        <h5 class="title">Заказы [шт]</h5>
+                    </div>
+                </div>
+                <div class="card-body" >
+                    <canvas id="by_orders"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="col-lg-6 col-md-6 col-sm-12 mb-4 statistics_block">
+	<div class="card  h-100">
 	    <div class="card-inner">
-	      <div class="card-title-group  g-2">
-	         <div class="card-title ">
-	          <h5 class="title">Заказы [шт]</h5>
-	                </div>
+            <div class="card-title-group  g-2">
+                <div class="card-title ">
+                    <h5 class="title">Общая стоимость[грн]</h5>
+                </div>
 	        </div>
+            <div class="card-body" >
+                <canvas id="by_totals"></canvas>
+            </div>
 	</div>
 	</div>
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 mb-4 statistics_block">
 	<div class="card  h-100">
 	    <div class="card-inner">
-	      <div class="card-title-group  g-2">
-	         <div class="card-title ">
-	          <h5 class="title">Общая стоимость[$]</h5>
-	                </div>
+            <div class="card-title-group  g-2">
+                <div class="card-title ">
+                    <h5 class="title">Наложенный платеж [грн]</h5>
+                </div>
 	        </div>
+            <div class="card-body" >
+                <canvas id="by_COD"></canvas>
+            </div>
 	</div>
 	</div>
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 mb-4 statistics_block">
 	<div class="card  h-100">
 	    <div class="card-inner">
-	      <div class="card-title-group  g-2">
-	         <div class="card-title ">
-	          <h5 class="title">Наложенный платеж [грн]</h5>
-	                </div>
+            <div class="card-title-group  g-2">
+                <div class="card-title ">
+                    <h5 class="title">Количество товаров [шт]</h5>
+                </div>
 	        </div>
-	</div>
-	</div>
-	</div>
-	<div class="col-lg-6 col-md-6 col-sm-12 mb-4 statistics_block">
-	<div class="card  h-100">
-	    <div class="card-inner">
-	      <div class="card-title-group  g-2">
-	         <div class="card-title ">
-	          <h5 class="title">Количество товаров [шт]</h5>
-	                </div>
-	        </div>
+            <div class="card-body" >
+                <canvas id="by_numbers"></canvas>
+            </div>
 	</div>
 	</div>
 	</div>
@@ -109,3 +121,4 @@
 
 
 </div>
+

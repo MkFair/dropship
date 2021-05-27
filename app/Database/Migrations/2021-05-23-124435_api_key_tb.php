@@ -11,7 +11,7 @@ class ApiKeyTb extends Migration
                 "type"=>"int",
                 "constraint"=>"10",
                 "unsigned"=>true,
-                "auto_inrement"=>true
+                "auto_increment"=>true
             ],
             "user_id"=>[
                 "type"=>"int",

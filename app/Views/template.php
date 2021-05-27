@@ -35,7 +35,7 @@
 </head>
 
 <body class="nk-body bg-lighter npc-default has-sidebar ">
-
+<!--
  <div class="modal fade" tabindex="-1" id="modalTop">
         <div class="modal-dialog modal-dialog-top modal-lg" role="document">
             <div class="modal-content">
@@ -85,11 +85,11 @@
                 </div>
               <!--  <div class="modal-footer bg-light">
                     <span class="sub-text"> <a href="#" data-dismiss="modal" aria-label="Close"> <button class="btn btn-primary">Закрыть</button></a></span>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
-
+--> 
 
     <div class="nk-app-root">
         <!-- main @s -->
@@ -122,6 +122,10 @@
                                         <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
                                         <span class="nk-menu-text">Пользователи</span>
                                     </a>
+                                    <a href="/admin/settings" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Настройки проекта</span>
+                                    </a>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-heading">
                                     <h6 class="overline-title text-primary-alt">Dashboards</h6>
@@ -151,7 +155,7 @@
                                     </a>
                                 </li>
                              <li class="nk-menu-item">
-                                    <a href="/contact" class="nk-menu-link" data-toggle="modal" data-target="#modalTop">
+                                    <a href="/contacts" class="nk-menu-link" >
                                         <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
                                         <span class="nk-menu-text">Контакты</span>
                                     </a>
@@ -587,7 +591,7 @@
                                 <ul class="nk-quick-nav">
                                     <li class=" hide-mb-xs">
                                         <a href="/replenishment">
-                                            <span class="badge badge-default"><?=$user->balance?> $</span>
+                                            <span class="badge badge-default"><?=$user->balance?> грн</span>
                                         </a>
                                     </li>
                                     <li style="padding-top: 3px;">
@@ -635,11 +639,187 @@
         <!-- main @e -->
     </div>
     <!-- app-root @e -->
-    <!-- JavaScript -->
+    <!-- JavaScript  <script src="/static/assets/js/charts/chart-ecommerce.js?ver=2.4.0"></script>-->
     <script src="/static/assets/js/bundle.js?ver=2.4.0"></script>
     <script src="/static/assets/js/scripts.js?ver=2.4.0"></script>
-    <script src="/static/assets/js/charts/chart-ecommerce.js?ver=2.4.0"></script>
+   
     <script type="text/javascript">
+        if($(".city_select").length){
+        $(".city_select").select2({
+          ajax: {
+              delay: 250,
+              cache: false,
+            url: '/order/city_search/',
+            data: function (params) {
+              var query = {
+                search_city: params.term,
+                
+              }
+              return query;
+            },
+            processResults: function (data, params) {
+                console.log(data)
+                return data
+            }
+          }
+        });
+        $(".warehouse_select").select2({
+          ajax: {
+              delay: 250,
+              cache: false,
+            url: '/order/search_warehouses/',
+            data: function (params) {
+              var query = {
+                name_filter: params.term,
+                search_warehouses: $(".city_select").val()
+              }
+              return query;
+            },
+            processResults: function (data, params) {
+                console.log(data)
+                return data
+            }
+          }
+        });
+        $(".city_select").change(function(){
+            //$("select[name=novaposhta_warehouse]").removeAttr("disabled")
+           // $("select[name=novaposhta_warehouse]").html("")
+           // var city_id = $(this).val();
+/*get("/order/search_warehouses?city_id="+city_id).done(function(data){
+                console.log(data)
+            })*/
+        })
+    }
+    
+    //статистика
+    
+    if($("#by_orders").length){
+        
+  function lineChart(selector, set_data) {
+    var $selector = $(selector) 
+    
+      var $self = $($selector).first(),
+          _self_id = $self.attr('id')//,
+          //_get_data = typeof set_data === 'undefined' ? eval(_self_id) : set_data;
+console.log(_self_id)
+      var selectCanvas = document.getElementById(_self_id).getContext("2d");
+      var chart_data = [];
+_get_data = set_data
+      for (var i = 0; i < set_data.datasets.length; i++) {
+        chart_data.push({
+          label: _get_data.datasets[i].label,
+          tension: _get_data.lineTension,
+          backgroundColor: _get_data.datasets[i].background,
+          borderWidth: 2,
+          borderColor: _get_data.datasets[i].color,
+          pointBorderColor: _get_data.datasets[i].color,
+          pointBackgroundColor: '#fff',
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: _get_data.datasets[i].color,
+          pointBorderWidth: 2,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 2,
+          pointRadius: 4,
+          pointHitRadius: 4,
+          data: _get_data.datasets[i].data
+        });
+      }
+
+      var chart = new Chart(selectCanvas, {
+        type: 'line',
+        data: {
+          labels: _get_data.labels,
+          datasets: chart_data
+        },
+        options: {
+          legend: {
+            display: _get_data.legend ? _get_data.legend : false,
+           // rtl: NioApp.State.isRTL,
+            labels: {
+              boxWidth: 12,
+              padding: 20,
+              fontColor: '#6783b8'
+            }
+          },
+          maintainAspectRatio: false,
+          tooltips: {
+            enabled: true,
+            rtl: NioApp.State.isRTL,
+            callbacks: {
+              title: function title(tooltipItem, data) {
+                return data['labels'][tooltipItem[0]['index']];
+              },
+              label: function label(tooltipItem, data) {
+                return data.datasets[tooltipItem.datasetIndex]['data'][tooltipItem['index']] + ' ' + _get_data.dataUnit;
+              }
+            },
+            backgroundColor: '#eff6ff',
+            titleFontSize: 13,
+            titleFontColor: '#6783b8',
+            titleMarginBottom: 6,
+            bodyFontColor: '#9eaecf',
+            bodyFontSize: 12,
+            bodySpacing: 4,
+            yPadding: 10,
+            xPadding: 10,
+            footerMarginTop: 0,
+            displayColors: false
+          },
+          scales: {
+            yAxes: [{
+              display: true,
+              position: NioApp.State.isRTL ? "right" : "left",
+              ticks: {
+                beginAtZero: false,
+                fontSize: 12,
+                fontColor: '#9eaecf',
+                padding: 10
+              },
+              gridLines: {
+                color: NioApp.hexRGB("#526484", .2),
+                tickMarkLength: 0,
+                zeroLineColor: NioApp.hexRGB("#526484", .2)
+              }
+            }],
+            xAxes: [{
+              display: true,
+              ticks: {
+                fontSize: 12,
+                fontColor: '#9eaecf',
+                source: 'auto',
+                padding: 5,
+                reverse: NioApp.State.isRTL
+              },
+              gridLines: {
+                color: "transparent",
+                tickMarkLength: 10,
+                zeroLineColor: NioApp.hexRGB("#526484", .2),
+                offsetGridLines: true
+              }
+            }]
+          }
+        }
+      });
+   
+  } // init line chart
+  var filledLineChart = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    dataUnit: 'Заказов[шт.]',
+    lineTension: .4,
+    datasets: [{
+      label: "Total Received",
+      color: "#9d72ff",
+      background: NioApp.hexRGB('#9d72ff', .4),
+      data: [110, 80, 125, 65, 95, 75, 90, 110, 80, 125, 70, 95]
+    }]
+  };
+  lineChart("#by_orders",filledLineChart)
+  lineChart("#by_totals",filledLineChart)
+  lineChart("#by_COD",filledLineChart)
+  lineChart("#by_numbers",filledLineChart)
+        
+    }
+    
 
     </script>
 </body>

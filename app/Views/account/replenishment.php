@@ -5,6 +5,9 @@
 
   <div class="nk-block">
         <div class="row g-gs">
+            <div class="col-lg-6 ">
+                
+            </div>
           <div class="col-lg-6 ">
             <div class="card h-100">
               <div class="card-inner">
@@ -17,16 +20,16 @@
                    </div>
             
                 </div>
-
+<form method=post action="/replenishment/handler">
 <div class="group-control">
 	<small >Укажите сумму</small>
     <input type=text name="amount" class="form-control">
-    <small >Счет будет выставлен в грн., но зачислен в $ по внутреннему курсу.<br>
+    <small >Счет будет выставлен в грн.<br>
     Комиссия 2,5% за платеж. </small>
     <br>
     <button class="form-control btn btn-primary mt-2" style="justify-content: center;">Перейти к оплате</button>
 </div>
-
+</form>
              </div>
          </div><!-- .card -->
      </div><!-- .col -->                                

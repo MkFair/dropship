@@ -41,7 +41,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form action="html/index.html">
+                                <form id="signin_form">
                                     <div class="form-group">
                                         <div class="form-label-group">
                                             <label class="form-label" for="default-01">Телефон</label>
@@ -129,12 +129,18 @@
         </div>
         <!-- main @e -->
     </div>
-    <!-- app-root @e -->
-    <!-- JavaScript -->
-    <script src="./assets/js/bundle.js?ver=2.4.0"></script>
-    <script src="./assets/js/scripts.js?ver=2.4.0"></script>
+   
+   
+    <script src="/static/js/jquery.min.js?ver=2.4.0"></script>
     <script>
-        //запрос авторизации на /signin/handler
-        // ответ ok error
+        
+        $("#signin_form").submit(function(){
+            $(this).find(".alert").remove()
+            $.post("/signin/handler",$(this).serializeArray()).done(function(data){
+                if(data=="ok") window.location.href="/orders"
+                else $("#signin_form").prepend("<div class='alert alert-danger'>Указанные данные неверны. </div>")
+            })
+            return false
+        })
     </script>
 </html>
