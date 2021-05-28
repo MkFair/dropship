@@ -4,6 +4,8 @@ namespace App\Controllers;
 class Settings extends BaseController{
     function index(){
         $ak= new \App\Models\ApiKey();
+        $m = new \App\Models\Category();
+        $this->data["categories"] = $m->findAll();
         $this->data["api_key"] = ($ak->get_by_user($this->data["user"]->id)?$ak->get_by_user($this->data["user"]->id)->key:"");
         $this->display("account/settings.php");
     }

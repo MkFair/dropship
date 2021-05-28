@@ -12,6 +12,11 @@ class User extends Model{
     public function update_user( int $user_id,array $data ){
         if( isset($data["password"]) and empty($data["password"]) )
             unset($data["password"]);
+        $u = $this->where(["id"=>$user_id])->first();
+        if( $u->balance != $data["balance"] ){
+           $m = new AdmChangesBalance();
+            $m->insert(["user_id"=>$user_id,"changed"=>date("Y-m-d H:i:s"),"money"=>$data["balance"]-$u->balance]);
+        }
         $this->update($user_id,$data);
     }
     public function create_user($phone,$password){

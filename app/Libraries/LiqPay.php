@@ -3,7 +3,7 @@ namespace App\Libraries;
 class LiqPay{
     protected $public_key = "sandbox_i99902494325";
     protected $private_key = "sandbox_Ggki7SB47FM3MF1lFLOZI36cC82HLfAopZ3tV97u";
-    function get_payform($amount){
+    function get_payform(int $order_id, float $amount){
         $liqpay = new \LiqPay($this->public_key, $this->private_key);
         $html = $liqpay->cnb_form(array(
         'action'         => 'pay',

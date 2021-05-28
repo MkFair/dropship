@@ -2,7 +2,7 @@
 
        <h3 class="nk-block-title page-title" style="font-weight: normal;">Заказы </h3>
 
-       <button href="/order" class="btn btn-primary" style="font-size: 16px;">+ Новый заказ</button>
+       <a href="/order" class="btn btn-primary" style="font-size: 16px;">+ Новый заказ</a>
     </div>
 
 

@@ -157,3 +157,145 @@ INFO - 2021-05-27 12:05:57 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2021-05-27 12:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2021-05-27 12:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2021-05-27 12:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2021-05-27 12:34:14 --> Class 'App\Models\AdmсhangesBalance' not found
+#0 /home/mkalister/Документы/php/dropship/app/Controllers/Admin/Users.php(21): App\Models\User->update_user()
+#1 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(918): App\Controllers\Admin\Users->profile()
+#2 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mkalister/Документы/php/dropship/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /home/mkalister/Документы/php/dropship/system/Commands/Server/rewrite.php(34): require_once('/home/mkalister...')
+#6 {main}
+INFO - 2021-05-27 12:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2021-05-27 12:34:49 --> Class 'App\Models\AdmсhangesBalance' not found
+#0 /home/mkalister/Документы/php/dropship/app/Controllers/Admin/Users.php(21): App\Models\User->update_user()
+#1 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(918): App\Controllers\Admin\Users->profile()
+#2 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mkalister/Документы/php/dropship/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /home/mkalister/Документы/php/dropship/system/Commands/Server/rewrite.php(34): require_once('/home/mkalister...')
+#6 {main}
+INFO - 2021-05-27 12:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2021-05-27 12:44:11 --> Class 'App\Controllers\Admin\AdmChangesBalance' not found
+#0 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(918): App\Controllers\Admin\Users->profile()
+#1 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mkalister/Документы/php/dropship/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /home/mkalister/Документы/php/dropship/system/Commands/Server/rewrite.php(34): require_once('/home/mkalister...')
+#5 {main}
+INFO - 2021-05-27 12:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 12:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2021-05-27 12:58:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id(7) NOT NULL,
+	`created_on` datetime NOT NULL,
+	CONSTRAINT `pk_replenishment` ' at line 5 in /home/mkalister/Документы/php/dropship/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/mkalister/Документы/php/dropship/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mkalister/Документы/php/dropship/system/Database/Forge.php(535): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mkalister/Документы/php/dropship/app/Database/Migrations/2021-05-27-175348_replenishment.php(35): CodeIgniter\Database\Forge->createTable()
+#5 /home/mkalister/Документы/php/dropship/system/Database/MigrationRunner.php(1060): App\Database\Migrations\Replenishment->up()
+#6 /home/mkalister/Документы/php/dropship/system/Database/MigrationRunner.php(223): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/mkalister/Документы/php/dropship/system/Commands/Database/Migrate.php(128): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/mkalister/Документы/php/dropship/system/CLI/Commands.php(100): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/mkalister/Документы/php/dropship/system/CLI/CommandRunner.php(107): CodeIgniter\CLI\Commands->run()
+#10 /home/mkalister/Документы/php/dropship/system/CLI/CommandRunner.php(85): CodeIgniter\CLI\CommandRunner->index()
+#11 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(914): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#13 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#14 /home/mkalister/Документы/php/dropship/system/CLI/Console.php(86): CodeIgniter\CodeIgniter->run()
+#15 /home/mkalister/Документы/php/dropship/spark(57): CodeIgniter\CLI\Console->run()
+#16 {main}
+INFO - 2021-05-27 14:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2021-05-27 14:03:14 --> Class 'App\Model\Replenishment' not found
+#0 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(918): App\Controllers\Replenishment->handler()
+#1 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mkalister/Документы/php/dropship/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /home/mkalister/Документы/php/dropship/system/Commands/Server/rewrite.php(34): require_once('/home/mkalister...')
+#5 {main}
+INFO - 2021-05-27 14:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2021-05-27 14:03:43 --> mysqli_sql_exception: Table 'drsh.replenishment' doesn't exist in /home/mkalister/Документы/php/dropship/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/mkalister/Документы/php/dropship/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mkalister/Документы/php/dropship/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mkalister/Документы/php/dropship/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mkalister/Документы/php/dropship/app/Controllers/Replenishment.php(12): CodeIgniter\Model->insert()
+#6 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(918): App\Controllers\Replenishment->handler()
+#7 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mkalister/Документы/php/dropship/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 /home/mkalister/Документы/php/dropship/system/Commands/Server/rewrite.php(34): require_once('/home/mkalister...')
+#11 {main}
+INFO - 2021-05-27 14:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2021-05-27 14:11:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id(7) NOT NULL,
+	`created_on` datetime NOT NULL,
+	CONSTRAINT `pk_replenishment` ' at line 5 in /home/mkalister/Документы/php/dropship/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/mkalister/Документы/php/dropship/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mkalister/Документы/php/dropship/system/Database/Forge.php(535): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mkalister/Документы/php/dropship/app/Database/Migrations/2021-05-27-175348_replenishment.php(35): CodeIgniter\Database\Forge->createTable()
+#5 /home/mkalister/Документы/php/dropship/system/Database/MigrationRunner.php(1060): App\Database\Migrations\Replenishment->up()
+#6 /home/mkalister/Документы/php/dropship/system/Database/MigrationRunner.php(223): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/mkalister/Документы/php/dropship/system/Commands/Database/Migrate.php(128): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/mkalister/Документы/php/dropship/system/CLI/Commands.php(100): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/mkalister/Документы/php/dropship/system/CLI/CommandRunner.php(107): CodeIgniter\CLI\Commands->run()
+#10 /home/mkalister/Документы/php/dropship/system/CLI/CommandRunner.php(85): CodeIgniter\CLI\CommandRunner->index()
+#11 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(914): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#13 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#14 /home/mkalister/Документы/php/dropship/system/CLI/Console.php(86): CodeIgniter\CodeIgniter->run()
+#15 /home/mkalister/Документы/php/dropship/spark(57): CodeIgniter\CLI\Console->run()
+#16 {main}
+INFO - 2021-05-27 14:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2021-05-27 14:15:43 --> mysqli_sql_exception: Column 'user_id' cannot be null in /home/mkalister/Документы/php/dropship/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/mkalister/Документы/php/dropship/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mkalister/Документы/php/dropship/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mkalister/Документы/php/dropship/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mkalister/Документы/php/dropship/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mkalister/Документы/php/dropship/app/Controllers/Replenishment.php(12): CodeIgniter\Model->insert()
+#6 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(918): App\Controllers\Replenishment->handler()
+#7 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /home/mkalister/Документы/php/dropship/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mkalister/Документы/php/dropship/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 /home/mkalister/Документы/php/dropship/system/Commands/Server/rewrite.php(34): require_once('/home/mkalister...')
+#11 {main}
+INFO - 2021-05-27 14:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2021-05-27 14:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

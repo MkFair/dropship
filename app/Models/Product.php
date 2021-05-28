@@ -4,6 +4,7 @@ namespace App\Models;
 class Product extends \CodeIgniter\Model {
     protected $table = "products";
     protected $primaryKey = "id";
+    protected $returnType = "object";
     protected $allowedFields = ["name","price","description","currencyId","categoryId","offer_id"];
     function add( object $offer ){
         

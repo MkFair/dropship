@@ -34,13 +34,9 @@
          </form>
 </div>
 </div>
-</div>
-</div>
 
 
 
-<div class="row mb-4">
-<div class="col-lg-4 col-md-7 col-sm-10 ">
 <div class="card">
     <div class="card-inner">
         <div class="card-title-group pb-3 g-2">
@@ -67,12 +63,9 @@
          </form>
 </div>
 </div>
-</div>
-</div>
 
 
-<div class="row mb-4">
-<div class="col-lg-4 col-md-7 col-sm-10 ">
+
 <div class="card">
     <div class="card-inner">
                 <div class="card-title-group pb-3 g-2">
@@ -92,6 +85,43 @@
          </form>
 </div>
 </div>
+</div>
+
+
+<div class="col-lg-8">
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-title-group pb-1 g-2">
+                <div class="card-title ">
+                  <h5 class="title">Установка розничных цен на товары</h5>
+                  <p>Эти данные будут использоваться для отображения правильных цен в интеграциях и для построения более точной аналитики. </p>
+                </div>
+            </div>
+        
+        <div class="card-body">
+            <div class="row">
+                <?php if( !empty($categories) ){
+                    foreach($categories as $category){?>
+                <div class="p-3 col-lg-4 border">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1"><?=$category->name?></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="default-01"></label>
+                        <div class="form-control-wrap">
+                            <div class="form-text-hint">
+                                <span class="">грн</span>
+                            </div>
+                            <input type="number" min=0 step=1 class="form-control" id="default-04" placeholder="0.00">
+                        </div>
+                    </div>
+                </div>
+                <?php }}else{echo"<center>Нет доступных категорий</center>";}?>
+            </div>
+        </div>
+        </div>
+    </div>
 </div>
 </div>
 

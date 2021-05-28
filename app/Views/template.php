@@ -98,6 +98,12 @@
                                         <span class="nk-menu-text">Контакты</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
+                             <li class="nk-menu-item">
+                                    <a href="/products" class="nk-menu-link" >
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Товары</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
 
 
                                

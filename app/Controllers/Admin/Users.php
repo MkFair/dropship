@@ -15,10 +15,15 @@ class Users extends AdminController{
         $request = \Config\Services::request();
         $userm = new \App\Models\User();
         $this->data["user"] = $userm->find($user_id);
+        $m = new \App\Models\Replenishment();
+        $this->data["replenishments"] = $m->where(["user_id"=>$user_id])->find();
+        $m = new \App\Models\AdmChangesBalance();
+        $this->data["changes_balance"] = $m->where(["user_id"=>$user_id])->find();
         if( !$this->data["user"] )
             return redirect()->to("/admin/users"); 
         if( $request->getMethod() == "post" ){
             $userm->update_user( $user_id, $request->getPost() );
+            
             $session->setFlashdata('success_updated', 'Данные успешно обновлены');
             return redirect()->to("/admin/users/profile/".$user_id); 
         }
