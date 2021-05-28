@@ -104,6 +104,18 @@
                                         <span class="nk-menu-text">Товары</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
+                             <li class="nk-menu-item">
+                                    <a href="/payments" class="nk-menu-link" >
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Взаиморасчеты</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                             <li class="nk-menu-item">
+                                    <a href="/remains" class="nk-menu-link" >
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Остатки и изображения</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
 
 
                                

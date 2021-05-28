@@ -93,7 +93,7 @@
         <div class="card-inner">
             <div class="card-title-group pb-1 g-2">
                 <div class="card-title ">
-                  <h5 class="title">Установка розничных цен на товары</h5>
+                  <h5 class="title">Установка розничных цен на категории товаров</h5>
                   <p>Эти данные будут использоваться для отображения правильных цен в интеграциях и для построения более точной аналитики. </p>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                         <label class="form-label" for="default-01"></label>
                         <div class="form-control-wrap">
                             <div class="form-text-hint">
-                                <span class="">грн</span>
+                                <span class="">%</span>
                             </div>
                             <input type="number" min=0 step=1 class="form-control" id="default-04" placeholder="0.00">
                         </div>
