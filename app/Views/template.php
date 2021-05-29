@@ -61,7 +61,7 @@
                                         <span class="nk-menu-text">Пользователи</span>
                                     </a>
                                     <a href="/admin/settings" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
                                         <span class="nk-menu-text">Настройки проекта</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
@@ -100,19 +100,19 @@
                                 </li><!-- .nk-menu-item -->
                              <li class="nk-menu-item">
                                     <a href="/products" class="nk-menu-link" >
-                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-layers-fill"></em></span>
                                         <span class="nk-menu-text">Товары</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
                              <li class="nk-menu-item">
                                     <a href="/payments" class="nk-menu-link" >
-                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-view-group-fill"></em></span>
                                         <span class="nk-menu-text">Взаиморасчеты</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
                              <li class="nk-menu-item">
                                     <a href="/remains" class="nk-menu-link" >
-                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-table-view-fill"></em></span>
                                         <span class="nk-menu-text">Остатки и изображения</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
@@ -376,6 +376,10 @@ _get_data = set_data
     }
     
 
+$(".btn-dark").click(function(){
+   $(this).parent().find(".link_block").css("display","block");
+   $(this).css("display","none");
+})
     </script>
 </body>
 
