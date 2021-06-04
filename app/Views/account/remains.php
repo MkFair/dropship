@@ -40,12 +40,13 @@
             Управление перечнем и ценами в <a href="/settings">настройках</a><br>
           <span class="text-success"> Не теряет актуальность</span> 
         </p>
-        <button class="btn btn-primary form-control btn_go mb-3" >Перейти</button>
+        <button class="btn btn-primary form-control btn_go mb-3" onclick="window.open('<?=site_url("export/".$api_key."/json")?>')">Перейти</button>
         <p>Данные доступны по ссылке: </p>
                <div class="show_block">
          <button class="btn btn-dark form-control btn_go mb-3" >Показать</button>
          <span class="form-control link_block ">
-             https://api.brushme.com.ua/d0805fead663e58f791e0546941cf7b4/public/products/xml/ 
+             <?=site_url("export/".$api_key."/json")?>
+
          </span>
         </div>
     </div>
@@ -60,12 +61,12 @@
             Управление перечнем и ценами в <a href="/settings">настройках</a><br>
             <span class="text-success"> Не теряет актуальность</span> 
         </p>
-        <button class="btn btn-primary form-control btn_go mb-3" >Перейти</button>
+        <button class="btn btn-primary form-control btn_go mb-3" onclick="window.open('<?=site_url("export/".$api_key."/xml")?>')">Перейти</button>
         <p>Данные доступны по ссылке: </p>
          <div class="show_block">
          <button class="btn btn-dark form-control btn_go mb-3" >Показать</button>
          <span class="form-control link_block ">
-             https://api.brushme.com.ua/d0805fead663e58f791e0546941cf7b4/public/products/xml/ 
+             <?=site_url("export/".$api_key."/xml")?>
          </span>
         </div>
        </div>
@@ -80,12 +81,12 @@
             Управление перечнем и ценами в <a href="/settings">настройках</a><br>
             <span class="text-success"> Не теряет актуальность</span> 
         </p>
-        <button class="btn btn-primary form-control btn_go mb-3" >Перейти</button>
+        <button class="btn btn-primary form-control btn_go mb-3" onclick="window.open('<?=site_url("export/".$api_key."/csv")?>')">Перейти</button>
         <p>Данные доступны по ссылке: </p>
         <div class="show_block">
          <button class="btn btn-dark form-control btn_go mb-3" >Показать</button>
          <span class="form-control link_block ">
-             https://api.brushme.com.ua/d0805fead663e58f791e0546941cf7b4/public/products/xml/ 
+             <?=site_url("export/".$api_key."/csv")?>
          </span>
         </div>
           </div>

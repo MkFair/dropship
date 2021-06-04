@@ -30,27 +30,27 @@
   <tbody>
     <tr>
       <td>Наименование</td>
-      <td>ФОП Петрончак Дмитро Ігорович UAH</td>
+      <td><?=$bankdetails->name?></td>
     </tr>
     <tr>
       <td>Код ЄДРПОУ(ОКПО)</td>
-      <td>3245307259</td>
+      <td><?=$bankdetails->code?></td>
     </tr>
     <tr>
       <td>Счет</td>
-      <td>26008052522960</td>
+      <td><?=$bankdetails->invoice?></td>
     </tr>
      <tr>
       <td>Счет(IBAN)</td>
-      <td>UA663366770000026008052522960</td>
+      <td><?=$bankdetails->IBAN?></td>
     </tr>
      <tr>
       <td>Код банка(МФО)</td>
-      <td>336677</td>
+      <td><?=$bankdetails->bank_code?></td>
     </tr>
      <tr>
       <td>Наименование банка</td>
-      <td>ІВАНО-ФРАНКIВ.ФIЛIЯАТ КБ «ПРИВАТБАНК»</td>
+      <td><?=$bankdetails->bank_name?></td>
     </tr>
   </tbody>
 </table>

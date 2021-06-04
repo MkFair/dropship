@@ -64,6 +64,14 @@
                                         <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
                                         <span class="nk-menu-text">Настройки проекта</span>
                                     </a>
+                                    <a href="/admin/bankdetails" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
+                                        <span class="nk-menu-text">Реквизиты банка</span>
+                                    </a>
+                                    <a href="/admin/contacts" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
+                                        <span class="nk-menu-text">Изменение контактов</span>
+                                    </a>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-heading">
                                     <h6 class="overline-title text-primary-alt">Dashboards</h6>

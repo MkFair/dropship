@@ -8,10 +8,19 @@
                 </center>
                 <span><?=$product->name?></span>
                 <span><?=$product->price?> грн</span>
-                <button class="btn btn-primary">В корзину</button>
+                <button class="btn btn-primary" onclick="add_to_cart(<?=$product->id?>)">В корзину</button>
             </div>
         </div>
 <?php }}else{ ?>
     <div class="col-lg-12"><center>Нет товаров для отображения</center></div>
 <?php }?>
 </div>
+<script>
+    function add_to_cart(product_id){
+        $.get("/products/add_to_cart",{product_id:product_id})
+        NioApp.Toast('Товар успешно добавлен в корзину', 'info', {
+          position: 'bottom-center'
+        });
+    }
+
+</script>

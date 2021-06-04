@@ -3,7 +3,8 @@ namespace App\Controllers;
 
 class Replenishment extends BaseController{
     function index(){
-        
+        $m = new \App\Models\Bankdetails();
+        $this->data["bankdetails"] = $m->find(1);
         $this->display("account/replenishment.php");
     }
     function handler(){

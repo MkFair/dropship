@@ -4,6 +4,9 @@ namespace App\Libraries;
 
 class NovaPoshta{
     protected $apikey = "87f2cb93def465a011c50f783c6971e0";
+    function transport_fee( string $endpoint){
+        
+    }
     function search($word){
         $url = "https://api.novaposhta.ua/v2.0/json/";
         $curl = new \App\Libraries\Curl($url);

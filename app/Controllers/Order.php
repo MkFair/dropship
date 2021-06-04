@@ -3,8 +3,42 @@ namespace App\Controllers;
 
 class Order extends BaseController{
     function index(){
-        
+        $cart_lib = new \App\Libraries\Cart();
+        $this->data["cart_products"] = $cart_lib->products();
         $this->display("account/order.php");
+    }
+    private function to_crm_format( array $products ){
+        $result = [];
+        foreach($products as $product){
+            $result[] = [
+                "id"=>$product->id,
+                "name"=>$product->name,
+                "costPerItem"=>$product->price,
+                "amount"=>$product->number,
+                "sku"=>$product->offer_id,
+            ];
+        }
+        return $result;
+    }
+    function handler(){
+        if($this->request->getMethod() == "post"){
+            if( $this->request->getPost("fName") and $this->request->getPost("phone")){
+                $sd = new \App\Libraries\SalesDrive();
+                $cartl = new \App\Libraries\Cart();
+                $products = $cartl->products();
+                if($products){
+                    $products = $this->to_crm_format($products);
+                    var_dump($sd->create_order(
+                        ["fName"=>$this->request->getPost("fName"),"lName"=>$this->request->getPost("lName"),"phone"=>$this->request->getPost("phone")],
+                        $products
+                    )); 
+                }
+            }
+        }
+    }
+    function test(){
+        $sd = new \App\Libraries\SalesDrive();
+        var_dump($sd->create_order()); 
     }
     function search_warehouses(){
         $request = \Config\Services::request();
